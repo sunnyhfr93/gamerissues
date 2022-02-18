@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Gamer form" max_length="40" name="x_742899_gamers_is_gamer_form" sizeclass="0" type="collection">
+        <element label="Gamer ID" max_length="40" name="gamer_id" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>
