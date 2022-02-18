@@ -2,5 +2,15 @@
     <element label="Gamer form" max_length="40" name="x_742899_gamers_is_gamer_form" sizeclass="0" type="collection">
         <element label="Gamer ID" max_length="40" name="gamer_id" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fr" label="Issue" mandatory="true" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Frame Rate" sequence="0" value="fr"/>
+                <element inactive_on_update="false" label="Artifacts" sequence="1" value="af"/>
+                <element inactive_on_update="false" label="Screen Tearing" sequence="2" value="st"/>
+                <element inactive_on_update="false" label="Disruptive Audio" sequence="3" value="da"/>
+                <element inactive_on_update="false" label="Hardware over heating" sequence="4" value="hardware over heating"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="400" name="u_string_3" type="string"/>
     </element>
 </database>
